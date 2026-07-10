@@ -11,6 +11,17 @@
   environment = { NETLIFY_USE_YARN = "false" }
 
 [[headers]]
+  for = "/webbuild/Build/*.wasm"
+  [headers.values]
+    Content-Type = "application/wasm"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/webbuild/Build/*.data"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
   for = "/webbuild/**"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
