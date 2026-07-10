@@ -3,104 +3,828 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Billy Rehowsik - Projects & Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Billy Hrehowsik - IT Support Professional, Developer, and Technical Problem Solver. View my portfolio, projects, and experience.">
+    <meta name="author" content="Billy Hrehowsik">
+    <meta name="keywords" content="IT support, software developer, game developer, technical support, portfolio, Billy Hrehowsik">
+    <meta name="theme-color" content="#1a1a2e">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Billy Hrehowsik | IT Support Professional and Developer">
+    <meta property="og:description" content="IT Support Professional, Developer, and Technical Problem Solver. Explore my projects, experience, and technical skills.">
+    <meta property="og:url" content="https://billyhrehowsik.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://billyhrehowsik.github.io/assets/social-preview.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Billy Hrehowsik | IT Support Professional and Developer">
+    <meta name="twitter:description" content="IT Support Professional, Developer, and Technical Problem Solver.">
+    <meta name="twitter:image" content="https://billyhrehowsik.github.io/assets/social-preview.png">
+
+    <link rel="canonical" href="https://billyhrehowsik.github.io/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Billy Hrehowsik | IT Support Professional and Developer</title>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Billy Hrehowsik",
+        "url": "https://billyhrehowsik.github.io",
+        "email": "billyhrehowsik@gmail.com",
+        "jobTitle": "IT Support Professional and Developer",
+        "location": {
+            "@type": "Place",
+            "name": "Middletown, New Jersey"
+        },
+        "sameAs": [
+            "https://github.com/billyhrehowsik"
+        ],
+        "alumniOf": {
+            "@type": "Organization",
+            "name": "Montclair State University",
+            "url": "https://www.montclair.edu/"
+        },
+        "knowsAbout": [
+            "IT Support",
+            "Technical Support",
+            "Windows",
+            "macOS",
+            "Linux",
+            "Python",
+            "JavaScript",
+            "Web Development",
+            "Game Development",
+            "Systems Troubleshooting",
+            "Networking",
+            "Software Development"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <nav class="navbar">
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main navigation">
         <div class="container">
-            <div class="nav-brand">BR</div>
+            <div class="nav-brand">
+                <a href="#home" class="nav-brand-link">
+                    <span class="nav-brand-icon">BR</span>
+                    <span class="nav-brand-text">Billy Hrehowsik</span>
+                </a>
+            </div>
+
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
             <ul class="nav-links">
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+
+            <button class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi, I'm Billy Rehowsik</h1>
-                <p class="subtitle">Building innovative projects and exploring ideas through code</p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="https://github.com/billyhrehowsik" class="btn btn-secondary" target="_blank">GitHub</a>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-placeholder">BR</div>
+                    <h1>Billy Hrehowsik</h1>
+                    <p class="hero-subtitle">IT Support Professional, Developer, and Technical Problem Solver</p>
+                    <p class="hero-description">
+                        Recent graduate with hands-on IT support experience, software development expertise, and a passion for solving complex technical problems.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#resume" class="btn btn-secondary">Download Resume</a>
+                    </div>
+                    <div class="hero-links">
+                        <a href="https://github.com/billyhrehowsik" target="_blank" rel="noopener noreferrer" title="GitHub Profile" aria-label="Visit my GitHub profile">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:billyhrehowsik@gmail.com" title="Email me" aria-label="Send me an email">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <p class="section-subtitle">A selection of projects I've worked on</p>
-
-            <div class="projects-grid">
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Project Name</h3>
-                        <span class="project-tag">Technology</span>
-                    </div>
-                    <p>Brief description of this project and what it demonstrates. Share the problem you solved and the technologies you used.</p>
-                    <div class="project-links">
-                        <a href="#" class="link-icon">→ View Project</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Another Project</h3>
-                        <span class="project-tag">Tech Stack</span>
-                    </div>
-                    <p>Describe what makes this project interesting. Highlight key features, challenges overcome, or interesting learnings.</p>
-                    <div class="project-links">
-                        <a href="#" class="link-icon">→ View Project</a>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-header">
-                        <h3>Upcoming Project</h3>
-                        <span class="project-tag">Coming Soon</span>
-                    </div>
-                    <p>Space for showcasing your future work. As you build and complete new projects, add them here to keep your portfolio fresh.</p>
-                    <div class="project-links">
-                        <a href="#" class="link-icon">→ View Project</a>
-                    </div>
-                </article>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>
+                        I'm an IT support professional and developer based in Middletown, New Jersey, with a recent degree in Information Technology from Montclair State University. I combine hands-on technical support experience with software development skills to deliver practical solutions to complex problems.
+                    </p>
+                    <p>
+                        Over the past two years, I've supported users across diverse platforms—Windows, macOS, iOS, Android, and ChromeOS—while troubleshooting everything from network connectivity to account access issues. I've developed a strong foundation in systems administration, created internal documentation, and worked in ticketing environments using tools like ServiceNow and BeyondTrust.
+                    </p>
+                    <p>
+                        Beyond support, I'm passionate about software development. I've built full-stack web applications using Python and Flask, created game prototypes in Unity and C#, and designed user-centered interfaces. My approach emphasizes clear communication, methodical problem-solving, and continuous learning.
+                    </p>
+                    <p>
+                        I'm interested in growing my expertise in systems administration, cloud technologies, cybersecurity, and advanced software development. Whether I'm helping a user troubleshoot a printer or architecting a new feature, I bring curiosity, attention to detail, and a commitment to getting things right.
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About</h2>
-            <p>
-                I'm passionate about building software that solves real problems. With expertise in [your skills],
-                I enjoy exploring new technologies and taking ideas from concept to execution.
-            </p>
-            <p>
-                When I'm not coding, you can find me [interests/hobbies].
-            </p>
-        </div>
-    </section>
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2>Professional Experience</h2>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title-block">
+                            <h3>Service Desk Technician & Printing Lab Assistant</h3>
+                            <p class="experience-org">Montclair State University IT Support Services</p>
+                        </div>
+                        <p class="experience-dates">September 2023 – May 2026</p>
+                    </div>
+                    <p class="experience-location">Montclair, New Jersey</p>
+                    <ul class="experience-details">
+                        <li>Provided phone, remote, and in-person technical support to students, faculty, staff, and alumni</li>
+                        <li>Troubleshot and resolved issues across Windows, macOS, iOS, Android, and ChromeOS devices</li>
+                        <li>Supported Microsoft 365 services, Canvas learning management system, and university-wide platforms</li>
+                        <li>Diagnosed and resolved Wi-Fi connectivity and network-related issues</li>
+                        <li>Assisted users with Cisco VPN setup and Duo multifactor authentication</li>
+                        <li>Resolved account access and identity-management problems through Active Directory support</li>
+                        <li>Troubleshot printers and campus printing services; assisted with PaperCut configuration</li>
+                        <li>Used BeyondTrust Bomgar for secure remote support and session management</li>
+                        <li>Managed ServiceNow ticketing workflow; triaged incidents and escalated to specialized teams</li>
+                        <li>Created and maintained internal knowledge-base documentation for common issues and procedures</li>
+                        <li>Communicated technical solutions clearly to users with varying levels of technical experience</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-    <footer id="contact" class="footer">
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <p class="section-subtitle">A selection of projects showcasing my development and problem-solving skills</p>
+
+                <div class="projects-grid">
+                    <!-- PurchaseLog Card -->
+                    <article class="project-card" data-category="full-stack">
+                        <div class="project-header">
+                            <h3>PurchaseLog</h3>
+                            <span class="project-tag">Full-Stack</span>
+                        </div>
+                        <p class="project-description">
+                            A comprehensive inventory and sales tracking application for managing products, orders, and profitability analysis.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">SQLite</span>
+                            <span class="tech-badge">JavaScript</span>
+                        </div>
+                        <a href="#project-purchaselog" class="project-link">View Details →</a>
+                    </article>
+
+                    <!-- WonkKart Card -->
+                    <article class="project-card" data-category="game-dev">
+                        <div class="project-header">
+                            <h3>FullThrottle / WonkKart</h3>
+                            <span class="project-tag">Game Dev</span>
+                        </div>
+                        <p class="project-description">
+                            A kart-racing game developed in Unity featuring AI opponents, character progression, and dynamic gameplay.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Unity</span>
+                            <span class="tech-badge">C#</span>
+                            <span class="tech-badge">Game Physics</span>
+                        </div>
+                        <a href="#project-wonkkart" class="project-link">View Details →</a>
+                    </article>
+
+                    <!-- CampusConnect Card -->
+                    <article class="project-card" data-category="design">
+                        <div class="project-header">
+                            <h3>CampusConnect</h3>
+                            <span class="project-tag">UX Design</span>
+                        </div>
+                        <p class="project-description">
+                            A user-centered interface design prototype for centralized university service access and resource navigation.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Figma</span>
+                            <span class="tech-badge">UX Research</span>
+                            <span class="tech-badge">Prototyping</span>
+                        </div>
+                        <a href="#project-campusconnect" class="project-link">View Details →</a>
+                    </article>
+
+                    <!-- Knowledge Base Card -->
+                    <article class="project-card" data-category="documentation">
+                        <div class="project-header">
+                            <h3>Technical Documentation</h3>
+                            <span class="project-tag">Documentation</span>
+                        </div>
+                        <p class="project-description">
+                            Internal knowledge-base articles and support documentation for common IT issues and user procedures.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Technical Writing</span>
+                            <span class="tech-badge">Process Documentation</span>
+                            <span class="tech-badge">User Support</span>
+                        </div>
+                        <a href="#project-documentation" class="project-link">View Details →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details: PurchaseLog -->
+        <section id="project-purchaselog" class="project-detail">
+            <div class="container">
+                <a href="#projects" class="back-link">← Back to Projects</a>
+
+                <div class="project-detail-header">
+                    <h2>PurchaseLog</h2>
+                    <p class="project-detail-subtitle">Inventory, Sales, and Profitability Tracking Application</p>
+                </div>
+
+                <div class="project-detail-grid">
+                    <div class="project-detail-content">
+                        <h3>Overview</h3>
+                        <p>
+                            PurchaseLog is a full-stack web application designed to streamline inventory management, sales tracking, and profitability analysis. The application provides a complete workflow for managing products, recording transactions, and generating actionable insights into business performance.
+                        </p>
+
+                        <h3>Problem Addressed</h3>
+                        <p>
+                            Businesses often struggle to track inventory across multiple channels, understand the profitability of individual products, and maintain accurate cost history. PurchaseLog consolidates these functions into a single, intuitive interface, reducing manual tracking and enabling data-driven decisions.
+                        </p>
+
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><strong>Inventory Management:</strong> Create, organize, and manage product groups and individual items</li>
+                            <li><strong>Sales Tracking:</strong> Record sales transactions and monitor sales performance</li>
+                            <li><strong>Purchase Orders:</strong> Manage procurement workflows and purchase-order history</li>
+                            <li><strong>Profitability Analysis:</strong> Calculate and visualize profit margins for products and categories</li>
+                            <li><strong>Cost Snapshots:</strong> Maintain historical cost data for accurate profitability reporting</li>
+                            <li><strong>Analytics:</strong> View dashboards and reports on sales trends, inventory levels, and financial performance</li>
+                            <li><strong>Data Import/Export:</strong> Import inventory data from CSV and export reports for further analysis</li>
+                            <li><strong>User-Friendly Interface:</strong> Clean, responsive design built with Bootstrap for accessibility across devices</li>
+                        </ul>
+
+                        <h3>Technical Implementation</h3>
+                        <p>
+                            <strong>Backend:</strong> Built with Python and Flask, PurchaseLog uses Flask-SQLAlchemy for database operations and Jinja templates for server-side rendering. SQLite provides a lightweight, portable database solution.
+                        </p>
+                        <p>
+                            <strong>Frontend:</strong> The interface combines Bootstrap for responsive layout, vanilla JavaScript for interactivity, and HTML/CSS for semantic structure. All components are designed for usability and accessibility.
+                        </p>
+                        <p>
+                            <strong>Testing:</strong> Automated tests using Pytest ensure core functionality remains reliable across updates.
+                        </p>
+                        <p>
+                            <strong>Configuration:</strong> Environment-based configuration allows deployment across different environments. Portable Windows startup scripts simplify local development.
+                        </p>
+
+                        <h3>Challenges and Lessons</h3>
+                        <p>
+                            One significant challenge was designing a data model that accurately captures the relationship between purchase costs and sales profitability over time. By implementing cost snapshots, I solved the problem of historical cost tracking, enabling accurate profitability reports even as product costs change.
+                        </p>
+                        <p>
+                            Another key learning was the importance of clear data validation and user feedback. Early versions lacked comprehensive error handling; refactoring to include detailed validation messages greatly improved usability and reduced data-entry errors.
+                        </p>
+
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li>Python, Flask, Flask-SQLAlchemy</li>
+                            <li>SQLite, SQL</li>
+                            <li>Jinja templating</li>
+                            <li>Bootstrap CSS framework</li>
+                            <li>JavaScript (vanilla)</li>
+                            <li>HTML5, CSS3</li>
+                            <li>Pytest for automated testing</li>
+                            <li>Git version control</li>
+                        </ul>
+                    </div>
+
+                    <aside class="project-detail-sidebar">
+                        <div class="project-meta">
+                            <h4>Project Details</h4>
+                            <dl>
+                                <dt>Category</dt>
+                                <dd>Full-Stack Web Application</dd>
+                                <dt>Role</dt>
+                                <dd>Sole Developer</dd>
+                                <dt>Repository</dt>
+                                <dd><a href="https://github.com/billyhrehowsik/purchlog" target="_blank" rel="noopener noreferrer">billyhrehowsik/purchlog</a></dd>
+                                <dt>Technologies</dt>
+                                <dd>Python, Flask, SQLite, JavaScript</dd>
+                                <dt>Status</dt>
+                                <dd>Active Development</dd>
+                            </dl>
+                        </div>
+
+                        <div class="project-screenshots">
+                            <h4>Screenshots</h4>
+                            <p class="placeholder-note">Screenshots coming soon</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details: WonkKart -->
+        <section id="project-wonkkart" class="project-detail">
+            <div class="container">
+                <a href="#projects" class="back-link">← Back to Projects</a>
+
+                <div class="project-detail-header">
+                    <h2>FullThrottle / WonkKart</h2>
+                    <p class="project-detail-subtitle">3D Kart-Racing Game in Unity</p>
+                </div>
+
+                <div class="project-detail-grid">
+                    <div class="project-detail-content">
+                        <h3>Overview</h3>
+                        <p>
+                            FullThrottle (codenamed WonkKart) is a 3D kart-racing game developed in Unity and C#. The project demonstrates comprehensive game development skills including physics simulation, AI behavior, user interface design, and game progression systems.
+                        </p>
+
+                        <h3>Development Context</h3>
+                        <p>
+                            Originally developed as part of game-development coursework, WonkKart has evolved into a substantial independent project showcasing advanced game mechanics, polished UI systems, and engaging gameplay progression.
+                        </p>
+
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><strong>Main Menu System:</strong> Polished menu interface with smooth navigation</li>
+                            <li><strong>Character Selection:</strong> Multiple playable characters with unique attributes</li>
+                            <li><strong>Garage System:</strong> Vehicle customization and upgrades</li>
+                            <li><strong>Track Selection:</strong> Multiple racing tracks with distinct themes</li>
+                            <li><strong>Three-Lap Racing:</strong> Full race mode with lap tracking and timing</li>
+                            <li><strong>AI Opponents:</strong> Intelligent AI-controlled competitors with varied difficulty levels</li>
+                            <li><strong>Drifting Mechanics:</strong> Advanced drifting system with boost rewards</li>
+                            <li><strong>Boost Pads:</strong> Track hazards and speed-boost mechanics</li>
+                            <li><strong>Character Progression:</strong> Unlockable characters and vehicles</li>
+                            <li><strong>Dynamic Obstacles:</strong> Spawning obstacles that challenge players throughout races</li>
+                            <li><strong>Difficulty Progression:</strong> Scaling difficulty as players advance</li>
+                            <li><strong>Minimap System:</strong> Real-time race position tracking</li>
+                            <li><strong>Input Support:</strong> Both keyboard and controller input handling</li>
+                        </ul>
+
+                        <h3>Technical Implementation</h3>
+                        <p>
+                            <strong>Game Engine:</strong> Built entirely in Unity with C# scripting. The project demonstrates proficiency in scene management, physics-based gameplay, and event-driven architecture.
+                        </p>
+                        <p>
+                            <strong>Physics & Gameplay:</strong> Custom vehicle physics simulate realistic kart behavior including weight distribution, friction, and drift mechanics. AI opponents use pathfinding and decision-making systems to provide competitive challenges.
+                        </p>
+                        <p>
+                            <strong>UI Systems:</strong> Comprehensive UI framework handles menus, HUD elements, race timing, and results screens with smooth animations and state management.
+                        </p>
+                        <p>
+                            <strong>Asset Organization:</strong> Clean scene structure and prefab system enable rapid level iteration and feature development.
+                        </p>
+
+                        <h3>Challenges and Lessons</h3>
+                        <p>
+                            Implementing convincing AI opponents was a major challenge. I learned to balance AI difficulty with fairness, ensuring the AI doesn't feel omniscient while still providing meaningful competition. Lane-switching and dynamic obstacle avoidance required careful tuning.
+                        </p>
+                        <p>
+                            Physics simulation for karts required substantial iteration. Early prototypes felt unresponsive; I improved the feel by adjusting acceleration curves, drift friction, and input sensitivity based on playtesting feedback.
+                        </p>
+                        <p>
+                            Camera work was another learning area. Third-person racing camera placement is subtle but critical for both control responsiveness and visual feedback. Several camera improvements refined the player experience.
+                        </p>
+
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li>Unity game engine</li>
+                            <li>C# scripting</li>
+                            <li>Physics engine (Unity physics)</li>
+                            <li>Scene management</li>
+                            <li>UI Canvas system</li>
+                            <li>AI and pathfinding</li>
+                            <li>Git version control</li>
+                        </ul>
+                    </div>
+
+                    <aside class="project-detail-sidebar">
+                        <div class="project-meta">
+                            <h4>Project Details</h4>
+                            <dl>
+                                <dt>Category</dt>
+                                <dd>Game Development</dd>
+                                <dt>Role</dt>
+                                <dd>Lead Developer</dd>
+                                <dt>Repository</dt>
+                                <dd><a href="https://github.com/billyhrehowsik" target="_blank" rel="noopener noreferrer">Coming Soon</a></dd>
+                                <dt>Technologies</dt>
+                                <dd>Unity, C#, Game Physics</dd>
+                                <dt>Status</dt>
+                                <dd>In Development</dd>
+                            </dl>
+                        </div>
+
+                        <div class="project-screenshots">
+                            <h4>Screenshots & Gameplay</h4>
+                            <p class="placeholder-note">Gameplay videos and screenshots coming soon</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details: CampusConnect -->
+        <section id="project-campusconnect" class="project-detail">
+            <div class="container">
+                <a href="#projects" class="back-link">← Back to Projects</a>
+
+                <div class="project-detail-header">
+                    <h2>CampusConnect</h2>
+                    <p class="project-detail-subtitle">University Service Portal UX Design</p>
+                </div>
+
+                <div class="project-detail-grid">
+                    <div class="project-detail-content">
+                        <h3>Overview</h3>
+                        <p>
+                            CampusConnect is a UX design prototype developed for a Human-Computer Interaction course. The project demonstrates user-centered design methodology, including research, persona development, wireframing, and interactive prototyping.
+                        </p>
+
+                        <h3>Design Challenge</h3>
+                        <p>
+                            Universities offer numerous services and resources to students, but these are often scattered across different websites and portals. CampusConnect addresses this fragmentation by creating a unified, discoverable interface for accessing academic, administrative, residential, and support services.
+                        </p>
+
+                        <h3>Design Methodology</h3>
+                        <ul>
+                            <li><strong>User Research:</strong> Conducted interviews and surveys with students to understand pain points and service-discovery challenges</li>
+                            <li><strong>User Personas:</strong> Developed personas representing different student segments (first-year students, commuters, graduate students) with distinct needs</li>
+                            <li><strong>Information Architecture:</strong> Organized services by user goal rather than administrative department, improving intuitive navigation</li>
+                            <li><strong>Wireframing:</strong> Created wireframes for key user flows including onboarding, service discovery, and quick actions</li>
+                            <li><strong>Interactive Prototyping:</strong> Built high-fidelity Figma prototype enabling user testing and iteration</li>
+                            <li><strong>Accessibility Focus:</strong> Prioritized keyboard navigation, color contrast, and screen reader compatibility</li>
+                            <li><strong>Iterative Refinement:</strong> Incorporated feedback from usability testing to improve navigation and reduce cognitive load</li>
+                        </ul>
+
+                        <h3>Key Design Features</h3>
+                        <ul>
+                            <li><strong>Personalized Dashboard:</strong> Quick access to frequently used services based on user role</li>
+                            <li><strong>Search-First Interface:</strong> Prominent search for users who know what they need</li>
+                            <li><strong>Service Categories:</strong> Browse by academic, housing, health, technology, and support categories</li>
+                            <li><strong>Responsive Design:</strong> Works seamlessly on phones, tablets, and desktops</li>
+                            <li><strong>Accessibility Standards:</strong> WCAG 2.1 AA compliance for color contrast, keyboard navigation, and semantics</li>
+                            <li><strong>Clear Call-to-Actions:</strong> Distinct action buttons for primary tasks (request help, view status, schedule appointment)</li>
+                        </ul>
+
+                        <h3>Technologies Used</h3>
+                        <ul>
+                            <li>Figma for design and prototyping</li>
+                            <li>User research methodologies</li>
+                            <li>Interaction design principles</li>
+                            <li>Accessibility (WCAG) standards</li>
+                            <li>Usability testing and feedback incorporation</li>
+                        </ul>
+                    </div>
+
+                    <aside class="project-detail-sidebar">
+                        <div class="project-meta">
+                            <h4>Project Details</h4>
+                            <dl>
+                                <dt>Category</dt>
+                                <dd>UX/UI Design</dd>
+                                <dt>Role</dt>
+                                <dd>UX Designer, Researcher</dd>
+                                <dt>Course</dt>
+                                <dd>Human-Computer Interaction</dd>
+                                <dt>Design Tool</dt>
+                                <dd>Figma</dd>
+                                <dt>Status</dt>
+                                <dd>Prototype / Concept</dd>
+                            </dl>
+                        </div>
+
+                        <div class="project-screenshots">
+                            <h4>Design Prototype</h4>
+                            <p class="placeholder-note">Figma prototype link coming soon</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details: Documentation -->
+        <section id="project-documentation" class="project-detail">
+            <div class="container">
+                <a href="#projects" class="back-link">← Back to Projects</a>
+
+                <div class="project-detail-header">
+                    <h2>Technical Documentation & Knowledge Base</h2>
+                    <p class="project-detail-subtitle">Support Documentation and Internal Knowledge Base</p>
+                </div>
+
+                <div class="project-detail-grid">
+                    <div class="project-detail-content">
+                        <h3>Overview</h3>
+                        <p>
+                            During my work in IT support services, I created and improved internal documentation and knowledge-base articles to help both users and support staff resolve issues efficiently. This documentation work demonstrates technical writing ability, procedural thinking, and a commitment to knowledge sharing.
+                        </p>
+
+                        <h3>Documentation Focus</h3>
+                        <ul>
+                            <li><strong>Zoom Sign-In Procedures:</strong> Step-by-step guides for accessing Zoom with university credentials, enabling special features, and troubleshooting connection issues</li>
+                            <li><strong>Jamf Connect Administrative Privileges:</strong> Documentation for granting and managing admin access on macOS devices using Jamf Connect</li>
+                            <li><strong>PaperCut Printing:</strong> Guides for printing from personal devices to campus printers, including troubleshooting common connection issues</li>
+                        </ul>
+
+                        <h3>Writing Approach</h3>
+                        <p>
+                            Effective technical documentation requires understanding the audience. My documentation serves both technical and non-technical users by:
+                        </p>
+                        <ul>
+                            <li>Starting with the simplest explanation before diving into advanced troubleshooting</li>
+                            <li>Using clear, active language and avoiding jargon where possible</li>
+                            <li>Organizing steps in logical sequences with screenshots where helpful</li>
+                            <li>Anticipating common questions and mistakes</li>
+                            <li>Providing multiple solutions for different scenarios</li>
+                            <li>Maintaining consistency in formatting and style</li>
+                        </ul>
+
+                        <h3>Impact</h3>
+                        <p>
+                            Well-organized documentation reduces support tickets by enabling self-service resolution. By creating clear, maintainable knowledge-base articles, I helped reduce repeated questions and allowed the support team to focus on complex issues. Updated documentation also ensures consistency in how issues are explained and resolved.
+                        </p>
+
+                        <h3>Key Skills Demonstrated</h3>
+                        <ul>
+                            <li>Technical writing for diverse audiences</li>
+                            <li>Procedural documentation</li>
+                            <li>Troubleshooting guidance</li>
+                            <li>Information organization and hierarchy</li>
+                            <li>User empathy and accessibility</li>
+                            <li>Systems thinking (understanding dependencies and workflows)</li>
+                        </ul>
+                    </div>
+
+                    <aside class="project-detail-sidebar">
+                        <div class="project-meta">
+                            <h4>Project Details</h4>
+                            <dl>
+                                <dt>Category</dt>
+                                <dd>Technical Documentation</dd>
+                                <dt>Role</dt>
+                                <dd>Technical Writer</dd>
+                                <dt>Context</dt>
+                                <dd>University IT Support Services</dd>
+                                <dt>Skills</dt>
+                                <dd>Technical Writing, Troubleshooting</dd>
+                                <dt>Status</dt>
+                                <dd>Ongoing</dd>
+                            </dl>
+                        </div>
+
+                        <div class="project-info">
+                            <h4>Documentation Principles</h4>
+                            <p>
+                                This work demonstrates my ability to translate technical procedures into clear user instructions—a skill essential in support roles and valuable in any technical communication context.
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Technical Skills</h2>
+                <p class="section-subtitle">Tools, technologies, and expertise areas</p>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>IT Support & Systems</h3>
+                        <ul class="skill-list">
+                            <li>Windows</li>
+                            <li>macOS</li>
+                            <li>iOS</li>
+                            <li>Android</li>
+                            <li>ChromeOS</li>
+                            <li>Microsoft 365</li>
+                            <li>Active Directory</li>
+                            <li>Cisco VPN</li>
+                            <li>Duo MFA</li>
+                            <li>Canvas LMS</li>
+                            <li>Wi-Fi Troubleshooting</li>
+                            <li>Printer Support</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Support Tools & Platforms</h3>
+                        <ul class="skill-list">
+                            <li>ServiceNow</li>
+                            <li>BeyondTrust Bomgar</li>
+                            <li>Jamf Connect</li>
+                            <li>PaperCut</li>
+                            <li>Ticket Triage</li>
+                            <li>Knowledge Base Management</li>
+                            <li>Remote Support</li>
+                            <li>Incident Escalation</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Networking & Security</h3>
+                        <ul class="skill-list">
+                            <li>TCP/IP</li>
+                            <li>DNS</li>
+                            <li>DHCP</li>
+                            <li>LAN/WAN</li>
+                            <li>Wi-Fi Protocols</li>
+                            <li>VPN Configuration</li>
+                            <li>Wireshark</li>
+                            <li>Basic Cybersecurity</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <ul class="skill-list">
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>C#</li>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>SQL</li>
+                            <li>PHP</li>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Web & Backend Frameworks</h3>
+                        <ul class="skill-list">
+                            <li>Flask</li>
+                            <li>Flask-SQLAlchemy</li>
+                            <li>Jinja Templating</li>
+                            <li>Bootstrap</li>
+                            <li>Responsive Design</li>
+                            <li>RESTful APIs</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Development & Design Tools</h3>
+                        <ul class="skill-list">
+                            <li>Git & GitHub</li>
+                            <li>Visual Studio Code</li>
+                            <li>Unity Engine</li>
+                            <li>Figma</li>
+                            <li>MySQL</li>
+                            <li>SQLite</li>
+                            <li>XAMPP</li>
+                            <li>Pytest</li>
+                            <li>Linux / Ubuntu</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Game Development</h3>
+                        <ul class="skill-list">
+                            <li>Unity Engine</li>
+                            <li>C# Scripting</li>
+                            <li>Game Physics</li>
+                            <li>AI Programming</li>
+                            <li>Scene Management</li>
+                            <li>UI Systems</li>
+                            <li>Game Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <ul class="skill-list">
+                            <li>Problem Solving</li>
+                            <li>Technical Communication</li>
+                            <li>User Support</li>
+                            <li>Documentation</li>
+                            <li>Troubleshooting</li>
+                            <li>System Analysis</li>
+                            <li>UX Design Principles</li>
+                            <li>Team Collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume">
+            <div class="container">
+                <h2>Resume</h2>
+                <div class="resume-content">
+                    <p>
+                        Download my resume to learn more about my education, professional experience, and technical qualifications.
+                    </p>
+                    <div class="resume-actions">
+                        <a href="assets/Billy-Hrehowsik-Resume.pdf" class="btn btn-primary" download>
+                            Download Resume (PDF)
+                        </a>
+                        <a href="assets/Billy-Hrehowsik-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            View Resume
+                        </a>
+                    </div>
+                    <p class="resume-note">
+                        <strong>Note for developers:</strong> Replace <code>assets/Billy-Hrehowsik-Resume.pdf</code> with your actual resume file. See the README for details.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p class="section-subtitle">Let's connect and discuss opportunities</p>
+
+                <div class="contact-content">
+                    <p>
+                        I'm always interested in discussing technical challenges, development projects, and opportunities to grow. Whether you have a question or just want to say hello, feel free to reach out.
+                    </p>
+
+                    <div class="contact-grid">
+                        <div class="contact-method">
+                            <h3>Email</h3>
+                            <a href="mailto:billyhrehowsik@gmail.com" class="contact-link">billyhrehowsik@gmail.com</a>
+                        </div>
+
+                        <div class="contact-method">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/billyhrehowsik" target="_blank" rel="noopener noreferrer" class="contact-link">github.com/billyhrehowsik</a>
+                        </div>
+
+                        <div class="contact-method">
+                            <h3>Location</h3>
+                            <p class="contact-info">Middletown, New Jersey</p>
+                        </div>
+
+                        <div class="contact-method">
+                            <h3>LinkedIn</h3>
+                            <p class="contact-placeholder">Profile link coming soon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <h2>Get in Touch</h2>
-                <p>Interested in collaborating? Feel free to reach out.</p>
-                <div class="social-links">
-                    <a href="https://github.com/billyhrehowsik" target="_blank">GitHub</a>
-                    <a href="mailto:billyhrehowsik@gmail.com">Email</a>
-                </div>
+                <p>&copy; 2025 Billy Hrehowsik. All rights reserved.</p>
+                <p class="footer-note">Designed and developed by Billy Hrehowsik.</p>
             </div>
-            <p class="footer-credit">© 2025 Billy Rehowsik. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top" title="Back to top">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M7 14l5-5 5 5z"/>
+        </svg>
+    </button>
+
+    <script src="js/script.js" defer></script>
 </body>
 </html>
