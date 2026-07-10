@@ -963,6 +963,10 @@ section:nth-child(even) {
     font-style: italic;
 }
 
+.btn-game-link {
+    margin-top: var(--space-lg);
+}
+
 .project-info {
     background-color: var(--bg-tertiary);
     border: 1px solid var(--border);
