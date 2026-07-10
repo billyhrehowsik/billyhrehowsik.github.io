@@ -272,6 +272,7 @@ section:nth-child(even) {
     position: sticky;
     top: 0;
     z-index: var(--z-sticky);
+    width: 100%;
     background-color: rgba(15, 15, 30, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
@@ -286,9 +287,10 @@ section:nth-child(even) {
 
 .navbar .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: var(--space-md) var(--container-padding);
+    gap: var(--space-3xl);
 }
 
 .nav-brand-link {
@@ -300,6 +302,7 @@ section:nth-child(even) {
     font-size: var(--font-size-xl);
     text-decoration: none;
     transition: opacity var(--transition);
+    margin-right: auto;
 }
 
 .nav-brand-link:hover {
@@ -445,7 +448,7 @@ section:nth-child(even) {
     cursor: pointer;
     padding: var(--space-sm);
     transition: transform var(--transition);
-    margin-left: var(--space-md);
+    margin-left: auto;
 }
 
 .theme-toggle:hover {
