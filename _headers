@@ -1,0 +1,12 @@
+/webbuild/Build/*.wasm
+  Content-Type: application/wasm
+  Cache-Control: public, max-age=31536000, immutable
+
+/webbuild/Build/*.data
+  Cache-Control: public, max-age=31536000, immutable
+
+/webbuild/**
+  Cache-Control: public, max-age=31536000, immutable
+
+/*
+  Cache-Control: public, max-age=3600
