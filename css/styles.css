@@ -754,6 +754,12 @@ section:nth-child(even) {
 }
 
 /* ===================== PROJECT CARD ===================== */
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .project-card {
     display: flex;
     flex-direction: column;
@@ -763,6 +769,7 @@ section:nth-child(even) {
     padding: var(--space-xl);
     transition: all var(--transition);
     cursor: pointer;
+    height: 100%;
 }
 
 .project-card:hover {
